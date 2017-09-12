@@ -34,14 +34,14 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void setStudents(Student[] students) {
-		/*try {
+		try {
 			if(students==null) {
 				throw new IllegalArgumentException("no student details");
 			}
 		}
 		catch(IllegalArgumentException e) {
 			System.out.println(e.getMessage());
-		}*/
+		}
 		
 		
 		// Add your implementation here
