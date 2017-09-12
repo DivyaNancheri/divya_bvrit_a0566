@@ -43,22 +43,57 @@ public class StudentGroup implements StudentArrayOperation {
 		catch(IllegalArgumentException e) {
 			System.out.println(e.getMessage());
 		}
+		
+		
 		// Add your implementation here
 	}
 
 	@Override
 	public Student getStudent(int index) {
+		try {
+			if(index<0||index>=students.length) {
+				throw new IllegalArgumentException("no index");
+			}
+			
+		}
+		catch(IllegalArgumentException e) {
+			System.out.println(e.getMessage());
+		}
 		// Add your implementation here
 		return null;
+		
 	}
 
 	@Override
 	public void setStudent(Student student, int index) {
+		students[index]=student;
+		try {
+			if(student==null) {
+				throw new IllegalArgumentException("no index");
+				
+			}
+			
+		}
+			catch(IllegalArgumentException e) {
+				System.out.println(e.getMessage());
+			}
+		
+		try {
+			if(index<0||index>=students.length) {
+				throw new IllegalArgumentException("no index");
+			}
+			
+		}
+		catch(IllegalArgumentException e) {
+			System.out.println(e.getMessage());
+		}
+		
 		// Add your implementation here
 	}
 
 	@Override
 	public void addFirst(Student student) {
+		
 		// Add your implementation here
 	}
 
