@@ -25,7 +25,7 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public Student[] getStudents() {
-		Scanner sc= new Scanner(System.in);
+		//Scanner sc= new Scanner(System.in);
 		if(students.length!=0)
 			return students;
 		else
@@ -66,7 +66,7 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void setStudent(Student student, int index) {
-	//	students[index]=student;
+		students[index]=student;
 		try {
 			if(student==null) {
 				throw new IllegalArgumentException("no index");
