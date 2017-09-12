@@ -67,7 +67,7 @@ public class StudentGroup implements StudentArrayOperation {
 	public void setStudent(Student student, int index) {
 		students[index]=student;
 		try {
-			if(student==null) {
+			if(students==null) {
 				throw new IllegalArgumentException("no index");
 				
 			}
