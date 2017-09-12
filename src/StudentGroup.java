@@ -49,15 +49,18 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public Student getStudent(int index) {
-		/*try {
+		
+			/*try {
+		
 			if(index<0||index>=students.length) {
 				throw new IllegalArgumentException("no index");
 			}
 			
-		}
+			}
 		catch(IllegalArgumentException e) {
 			System.out.println(e.getMessage());
-		}*/
+		}
+		*/
 		// Add your implementation here
 		return null;
 		
